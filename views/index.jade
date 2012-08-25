@@ -1,0 +1,30 @@
+.container
+  .hero-unit
+    h1 THIS DESIGNER
+    p
+      | IS ON TOP
+  .row
+    .span4
+      #wrap
+      div#wrapper
+        div(data-bind="template: { name: 'instagram-template', foreach: instagrams }")
+        //- remove comments to use jade partial
+        //- != partial('partials/image', images)
+    .span4
+      div(data-bind="foreach: tweets")
+        div(data-bind="tweet: $data")
+    .span4
+      h2 Tags
+
+script#instagram-template(type='text/html')
+  .recordcontainer.animating
+    .record.in(data-bind='event: { webkitAnimationEnd: $parent.endAnimation }')
+      img.listimg(data-bind='attr: { src: images.standard_resolution.url }')
+      .caption(data-bind='text: caption.text')
+      .caption(data-bind='text: created_time')
+
+script#tweet-template(type='text/html')
+  .recordcontainer.animating
+    .record.in(data-bind='event: { webkitAnimationEnd: $parent.endAnimation }')
+      img.listimg(data-bind='attr: { src: images.standard_resolution.url }')
+      .caption(data-bind='text: tweet.text')

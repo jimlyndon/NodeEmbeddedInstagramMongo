@@ -1,0 +1,91 @@
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background-color: #222;
+}
+
+#wrap {
+	/*width: 1040px;
+	margin: 0 auto;*/
+}
+
+#wrapper {
+	/*margin:0px auto 00px auto;
+	padding:10px 20px 40px 90px;
+	width:1010px;	*/
+}
+
+.record {
+	text-align:center!important;
+}
+
+.listimg {
+	margin:45px auto 10px auto; 
+	width:500px;
+	 box-shadow: 0px 3px 12px #999; 
+	 -moz-box-shadow: 0px 3px 12px #999; 
+	 -webkit-box-shadow: 0px 3px 12px #ACB5C4;
+	 -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+}
+
+.listimg:first-child{
+	margin:15px auto 10px auto; 
+}
+
+.caption{
+	/*width:500px;
+	height:40px;*/
+	margin:0px auto 00px auto;
+	text-align:right;	 
+	font-size:12px; color:#ffffff; font-weight:normal; line-height:12px;
+	
+}
+
+.recordcontainer.animating {
+	-webkit-transform: translateZ(-10em);
+	-webkit-transform-style: preserve-3d;
+	z-index: -100;
+}
+
+.in, .out {
+	-webkit-animation-duration: .75s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-transform-origin: 50% 50% -10em;
+	-webkit-backface-visibility: hidden;
+}
+
+/* .record img {
+	height: 100%;
+	width: 100%;
+} */
+.record.in {
+	-webkit-animation-name: cubeInFromRight;
+}
+
+.record.out {
+	-webkit-animation-name: cubeOutToLeft;
+}
+
+@-webkit-keyframes cubeInFromRight {
+	from { -webkit-transform: rotateX(90deg);
+	}
+	
+	to {
+		-webkit-transform: rotateX(0deg);
+	}
+}
+@-webkit-keyframes cubeOutToLeft {
+	from { -webkit-transform: rotateX(0deg);
+	}
+
+	to {
+		-webkit-transform: rotateX(-90deg);
+	}
+}
+
+/* @end */
+
+/* IE PNG */
+img {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(...);
+}

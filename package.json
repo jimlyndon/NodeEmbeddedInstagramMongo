@@ -1,0 +1,20 @@
+{
+    "name": "defcon",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+      "express": "~2.5.8"
+    , "underscore": ">=0.0.1"
+    , "stylus": ">= 0.0.1"
+    , "jade": ">= 0.0.1"
+    , "socket.io": "~0.9.6"
+    , "redis": ">= 0.7.2" 
+    , "redis-url": "0.1.0"
+    , "mubsub": "0.2.0"
+    , "mongous": "0.2.3"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
