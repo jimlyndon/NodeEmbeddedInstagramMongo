@@ -34,9 +34,7 @@ exports.getInstagrams = getInstagrams;
 
 // Retrieve from store
 function getTweets(callback) {
-  debug('in getTweets');
   $("test.twittermedia").find(10, function(reply) {
-  debug('in getTweets 2');  
     var sample1 = JSON.parse('{ "media" : { "retweet_count": 10, "favorite_count": 3, "user": { "id": 179215882, "name": "Rowing1839", "id_str": "179215882", "screen_name": "ROWING1839" }, "id_str": "238076220334555136", "entities": { "hashtags": [ { "indices": [ 45, 52 ], "text": "rowing" }, { "indices": [ 92, 106 ], "text": "brandbuilding" } ], "user_mentions": [ { "name": "CEO/Fashion Designer", "indices": [ 3, 19 ], "id_str": "55902631", "screen_name": "CLAUDE_MICHELLE", "id": 55902631 }, { "name": "Rowing1839", "indices": [ 33, 44 ], "id_str": "179215882", "screen_name": "ROWING1839", "id": 179215882 }, { "name": "✈ProducTivE ✈ Chandy", "indices": [ 85, 91 ], "id_str": "410520464", "screen_name": "cibmw", "id": 410520464 } ], "urls": [] }, "id": 238076220334555140, "created_at": "Wed Aug 22 00:52:48 +0000 2012", "text": "RT @CLAUDE_MICHELLE: Fitting new @ROWING1839 #rowing pieces for NYFW show with model @cibmw #brandbuilding" }}')
     
     var sample2 = JSON.parse('{ "media" : { "retweet_count": 5, "favorite_count": 2, "user": { "id": 454238834, "name": "Design Dove", "id_str": "454238834", "screen_name": "Design_Dove" }, "id_str": "238075405632958465", "entities": { "hashtags": [ { "indices": [ 0, 8 ], "text": "FASHION" } ], "user_mentions": [], "urls": [ { "url": "http://t.co/w6t01FgM", "display_url": "designdove.com/2012/02/16/10-…", "indices": [ 50, 70 ], "expanded_url": "http://designdove.com/2012/02/16/10-nyfw-nail-looks-that-blew-our-minds/" } ] }, "id": 238075405632958460, "created_at": "Wed Aug 22 00:49:34 +0000 2012", "text": "#FASHION : 10 NYFW Nail Looks That Blew Our Minds http://t.co/w6t01FgM" }}');
