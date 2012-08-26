@@ -3,7 +3,12 @@ var url = require('url'),
   helpers = require('./helpers'),
   subscriptions = require('./subscriptions'),
   app = settings.app;
-
+  
+  var $ = require("mongous").Mongous;
+  
+// Bootstrap db connection
+$("test.instagrammedia");
+$("test.twittermedia");
 
 // INSTAGRAM API USE ONLY - used to authenticate a subscription request from instagram servers
 app.get('/callbacks/tag/', function(request, response){
