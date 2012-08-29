@@ -52,4 +52,5 @@ curl "https://api.instagram.com/v1/subscriptions?client_id=$IG_CLIENT_ID&client_
 // view recent
 curl "https://api.instagram.com/v1/tags/nyfw/media/recent?client_id=$IG_CLIENT_ID"
 
-
+// clean mongo collection:
+mongo instance --eval "db.collection.drop()"
